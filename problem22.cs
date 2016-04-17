@@ -47,7 +47,7 @@ namespace Problem22
                 score += name * namePosition;
             }
 
-            Console.WriteLine("The sum of all the name scores in the text file is: " + score);
+            Console.WriteLine("The total value of all the name scores in the text file is: " + score);
         }
     }
 }
