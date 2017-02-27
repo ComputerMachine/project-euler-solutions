@@ -22,7 +22,7 @@ public class Problem23 {
 	public static ArrayList<Integer> divisors(int n) {
 		// Return ArrayList of n's proper divisors
 		
-		ArrayList divs = new ArrayList();
+		ArrayList<Integer> divs = new ArrayList<Integer>();
 
 		for (int i=1; i<n; i++) {
 			if (n % i == 0) divs.add(i);
