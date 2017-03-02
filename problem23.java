@@ -46,7 +46,7 @@ public class Problem23 {
 		return false;
 	}
 	
-	public static boolean sumOfTwoAbundants(int n, ArrayList<Integer> abundants) {
+	public static boolean isSumOfTwoAbundants(int n, ArrayList<Integer> abundants) {
 		// Return true if n can be expressed as the sum of 2 abundant numbers
 
 		for (int i=0; i<abundants.size(); i++) {
@@ -77,7 +77,7 @@ public class Problem23 {
 		int sumOfNonAbundants = 0;
 		
 		for (int k=1; k<LIMIT; k++) {
-			if (!sumOfTwoAbundants(k, abundants)) sumOfNonAbundants += k;
+			if (!isSumOfTwoAbundants(k, abundants)) sumOfNonAbundants += k;
 		}
 		
 		System.out.println(sumOfNonAbundants);
