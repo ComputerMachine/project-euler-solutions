@@ -10,7 +10,6 @@ func sieve(limit int) []bool {
     primes := make([]bool, limit+1)    
     limitsqrt := int(math.Sqrt(float64(limit)))
     
-    
     for x:=0; x<=limit; x++ {
         if x < 2 {
             primes[x] = false
